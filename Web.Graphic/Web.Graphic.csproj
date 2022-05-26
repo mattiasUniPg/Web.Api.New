@@ -12,8 +12,4 @@
     <ProjectReference Include="..\Web.App\Web.App.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\images\cart.png" />
-  </ItemGroup>
-
 </Project>
