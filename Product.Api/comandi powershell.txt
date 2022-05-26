@@ -1,0 +1,3 @@
+cd "C:\Users\marco\Desktop\progetti VS\webapi\Product.Api"
+
+dotnet run Product.Api.csproj --configuration Development
