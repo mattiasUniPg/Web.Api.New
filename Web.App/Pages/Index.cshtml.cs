@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
+
 namespace Web.App.Pages
 {
     public class IndexModel : PageModel
@@ -17,8 +18,7 @@ namespace Web.App.Pages
 
         public async Task OnGetAsync()
         {
-            var client = _client.CreateClient("ProductApi");
-            Message = await client.GetStringAsync("Product/List");
+            
         }
     }
 }
