@@ -33,11 +33,19 @@ namespace Cart.Api.Controllers
                 _cartDataProvider.Add(cart);
         }
 
-        [HttpDelete(template:"Delete/{userId}/{productId}")]
+        [HttpDelete(template: "Delete/{userId}/{productId}")]
         public void Delete(int userId, int productId)
         {
-            _cartDataProvider.Delete(userId,productId);
+            _cartDataProvider.Delete(userId, productId);
         }
 
+        [HttpGet(template: "List")]
+        public IEnumerable<CartDto> GetList(int id)
+        {
+
+            return _cartDataProvider.GetByUserId(id);
+
+
+        }
     }
 }
